@@ -1,0 +1,11 @@
+<div class="albums">
+		<h2> Albums</h2>
+	<% _.each(data.res.slice(0,9),function(value){ %>
+		<% getFirstImageByAlbum(value.id) %>
+		<div class="col-md-4">
+		<span class="album-title"> <%- value.title %> </span>
+		<a href="#" onClick="getPhotos('<%- value.id %>'); return false;"> <img data-id="<%- value.id %>" id = "image"  src="">
+		</div>
+	<% }); %>
+</div>
+
