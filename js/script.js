@@ -2,12 +2,12 @@
 var ALBUM_URL="https://jsonplaceholder.typicode.com/albums/";
 var ALBUM_ID="/photos";
 
-
 $(document).ready(function(){
   callHomepage();
 });
 
 function callHomepage(){
+
   $(".backButton-info").hide();
   $.get('templatehome.html',function(template){
     $.getJSON(ALBUM_URL,function(data){
@@ -17,16 +17,15 @@ function callHomepage(){
     });
   });
 }
-
 // getAlbumID
 function getFirstImageByAlbum(albumId) {
+
   var link = ALBUM_URL + albumId + ALBUM_ID ; 
   var testImage = $.getJSON(link);
   testImage.done(function(data) {
-      $('.albums img[data-id='+albumId+']').attr('src', data[0].thumbnailUrl);
+    $('.albums img[data-id='+albumId+']').attr('src', data[0].thumbnailUrl);
   });
 }
-
 // getPhotos
 function getPhotos(id) {
 
@@ -42,20 +41,3 @@ function getPhotos(id) {
       });
     });
 }
-
-
-
-
-
-//   $.get('photos.html',function(template){
-//       var photos = ALBUM_URL + id + ALBUM_ID ; 
-//       $.getJSON(photos,function(data){
-//         var allPhotos=data;
-//         template=_.template(template, {variable: 'data'})({res: result},);
-//       //photos.done(function(data) {
-//         //console.log(photos);
-//         $('.photos img[data-id='+albumId+']').attr('src', data.url);
-//       });
-//   });
-//   //});
-// }
