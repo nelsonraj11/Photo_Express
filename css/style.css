@@ -1,6 +1,5 @@
 body{
 	background-color: #eaeaea!important;
-	/*background: #eaeaea url(../image/body_bg.png) repeat-x!important;*/
 }
 .header{
 	border-top: 7px solid #fc0000;;
@@ -10,6 +9,7 @@ body{
     height: 281px;
     padding-bottom: 5px;
 }
+
 img.img-responsive {
     width: 31%;
     height: 150px;
@@ -26,16 +26,14 @@ img.img-responsive {
     margin-left: -24px!important;
 }
 
-.btn-info {
+.backButton-info {
     color: #fff;
-    background-color: #5bc0de;
+    background-color: rgba(153, 153, 153, 0.68);
     border-color: #46b8da;
-    margin-left: 27%;
+    margin-left: 86%;
     margin-bottom: -8%!important;
 }
-.btn {
-    margin-left: 94%!important;
-}
+
 
 .galleria-stage {
     height: 450px;
