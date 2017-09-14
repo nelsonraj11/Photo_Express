@@ -1,12 +1,10 @@
 <div class="albums-rows">
-		
-		<h2> Photos</h2>
-				<div id="galleria">
+
+	<h2> Photos</h2>
+	<div id="galleria">
 		<% _.each(data.res.slice(0,27),function(value){ %>
 			<img src="<%- value.url %>">
-		<% }); %>
-				</div>
+			<% }); %>
+	</div>
 
-</div>			
-		
-	
+</div>

@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="es5/main.js"></script>
 	<link type="text/css" rel="stylesheet" href="themes/classic/galleria.classic.css">
 	<script type="text/javascript" src="js/galleria-1.5.7.min.js"></script>
 	<script type="text/javascript" src="themes/classic/galleria.classic.min.js"></script>
@@ -24,11 +25,12 @@
 			<img src="image/logo.png" class="img-responsive" alt="logo">
 			</img>
 			<div class="row" id="mainpart">
-				<button type="button" class=" btn backButton-info" onclick="callHomepage()" ;>Back to Albums</button>
-					<div class="albums-rows">
-					</div>
+				<button type="button" class=" btn backButton-info" id ="backbutton" onclick="callHomepage()" ;>Back to Albums</button>
+				<div class="albums-rows">
+				</div>
 			</div>
 		</div>
 	</div>
 </body>
+
 </html>
